@@ -29,9 +29,26 @@ public class MaximumProblem {
 				System.out.println("Maximum number: "+thirdFloat);
 		}
 	}
+	private static void getMaximumNumber(String firstString, String secondString, String thirdString) {
+		if(firstString.compareTo(secondString)>0) {
+			if(firstString.compareTo(thirdString)>0)
+				System.out.println("Maximum number: "+firstString);
+			else
+				System.out.println("Maximum number: "+thirdString);
+		}
+		else {
+			if(secondString.compareTo(thirdString)>0)
+				System.out.println("Maximum number: "+secondString);
+			else
+				System.out.println("Maximum number: "+thirdString);
+		}
+		
+	}
 	public static void main(String[] args) {
 		getMaximumNumber(4,7,2);
 		getMaximumNumber(2.5f,1.2f,5.7f);
+		getMaximumNumber("Dog","Tiger","Snake");
 	}
+	
 
 }
