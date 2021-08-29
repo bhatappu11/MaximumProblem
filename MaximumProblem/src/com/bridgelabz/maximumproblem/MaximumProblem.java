@@ -5,6 +5,8 @@ public class MaximumProblem {
 		if(firstInteger.compareTo(secondInteger)>0) {
 			if(firstInteger.compareTo(thirdInteger)>0)
 				System.out.println("Maximum number: "+firstInteger);
+			else
+				System.out.println("Maximum number: "+thirdInteger);
 		}
 		else {
 			if(secondInteger.compareTo(thirdInteger)>0)
